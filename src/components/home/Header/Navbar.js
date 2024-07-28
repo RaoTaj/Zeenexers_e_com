@@ -26,7 +26,7 @@ const NavBar = () => {
       <div className="flex bg-primeColor text-white h-[60px] md:h-[80px] relative justify-between">
         <div className="flex items-center md:m-4">
           <Link to={"/"}>
-            <div>
+            <div className="pt-6 pb-4">
               <Image
                 className="w-[80px] md:w-[220px] object-cover"
                 imgSrc={logo}
@@ -37,16 +37,14 @@ const NavBar = () => {
         <div className=" hidden md:flex grow relative items-center">
           <Search />
         </div>
-        <div className="mt-7 items-center justify-center">
-          <Link to="/about" className="pl-4 pr-10">
+        <div className="mt-7 md:flex items-center justify-center mb-6">
+          <Link to="/about" className="mr-2 md:mr-6">
             About
           </Link>
-          <Link to="/contactUs" className="pl-4 pr-10">
+          <Link to="/contactUs" className="md:mr-6 mr-2">
             Contact Us
           </Link>
-          <Link to="/terms&services" className="pr-10">
-            Terms & Sevices
-          </Link>
+          <Link to="/terms&services">Terms & Sevices</Link>
         </div>
         <div className="flex items-center mx-2 md:m-4">
           {name.length > 0 ? (

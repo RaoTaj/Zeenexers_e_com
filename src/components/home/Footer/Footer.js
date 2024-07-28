@@ -5,6 +5,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import FooterListTitle from "./FooterListTitle";
 import { paymentCard } from "../../../assets/images";
 import Image from "../../designLayouts/Image";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [emailInfo, setEmailInfo] = useState("");
@@ -71,23 +72,38 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-span-1 xl:col-span-2 justify-center">
-          <FooterListTitle title="Your account" />
+          <FooterListTitle title="Acceptance of Terms" />
           <ul className="flex flex-col gap-2">
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Profile
-            </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Orders
-            </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Addresses
-            </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Account Details
-            </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Payment Options
-            </li>
+            <Link
+              to="/terms&services#product-and-services"
+              className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
+            >
+              Products and Services
+            </Link>
+            <Link
+              to="/terms&services#order-and-payment"
+              className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
+            >
+              Order and Payment
+            </Link>
+            <Link
+              to="/terms&services#shipping-and-delivery"
+              className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
+            >
+              Shipping and Delivery
+            </Link>
+            <Link
+              to="/terms&services#returns-and-refund"
+              className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
+            >
+              Returns and Refunds
+            </Link>
+            <Link
+              to="/terms&services#limitation-of-liability"
+              className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
+            >
+              Limitation of Liability
+            </Link>
           </ul>
         </div>
         <div className="col-span-1 xl:col-span-2 flex flex-col items-center w-full px-4">

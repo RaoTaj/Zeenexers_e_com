@@ -27,13 +27,16 @@ const Journal = () => {
         </h1>
 
         {/* Product and Services */}
-        <span className="text-primeColor font-bold text-xl ml-6">
+        <span
+          className="text-primeColor font-bold text-xl ml-6"
+          id="product-and-services"
+        >
           Product and Services
         </span>
         <br />
         <br />
         <h1 className="max-w-[600px] text-base text-lightText mb-8 ml-10">
-          <span className="text-primeColor font-semibold text-lg ">
+          <span className="text-primeColor font-semibold text-lg">
             Product Infomation
           </span>
           <br />
@@ -65,7 +68,10 @@ const Journal = () => {
         </h1>
 
         {/* Order and Payment */}
-        <span className="text-primeColor font-bold text-xl ml-6">
+        <span
+          className="text-primeColor font-bold text-xl ml-6"
+          id="order-and-payment"
+        >
           Order and Payment
         </span>
         <br />
@@ -105,7 +111,10 @@ const Journal = () => {
         </h1>
 
         {/* Shipping and Delivery */}
-        <span className="text-primeColor font-bold text-xl ml-6">
+        <span
+          className="text-primeColor font-bold text-xl ml-6"
+          id="shipping-and-delivery"
+        >
           Shipping and Delivery
         </span>
         <br />
@@ -133,7 +142,10 @@ const Journal = () => {
         </h1>
 
         {/* Returns and Refund*/}
-        <span className="text-primeColor font-bold text-xl ml-6">
+        <span
+          className="text-primeColor font-bold text-xl ml-6"
+          id="returns-and-refund"
+        >
           Returns and Refund
         </span>
         <br />
@@ -161,10 +173,12 @@ const Journal = () => {
         </h1>
         <div className="ml-16 mb-8">
           <ul className="list-disc">
-            <li>Ordwer Number</li>
+            <li>Customer Name</li>
+            <li>Customer Number</li>
             <li>Product's to be Returned</li>
-            <li>Ordwer Number</li>
-            <li>Ordwer Number</li>
+            <li>Reason for Return</li>
+            <li>Photos of the Product (If Applicable)</li>
+            <li>Permanent Address</li>
           </ul>
         </div>
 
@@ -178,6 +192,67 @@ const Journal = () => {
           number] days. Refunds will be issued to the original payment method.
           If the return is due to our error, we will also cover the shipping
           costs.
+        </h1>
+
+        <h1 className="max-w-[600px] text-base text-lightText mb-8 ml-10">
+          <span className="text-primeColor font-semibold text-lg ">
+            Valid Reason to Return a Product
+          </span>
+          <br />
+          <br />
+          <div className="pl-6 mb-8">
+            <ul className="list-disc">
+              <li>
+                The product is physically damaged or has a manufacturing defect
+                that makes it unusable.
+              </li>
+              <li>
+                The product received is not the same as what was ordered (e.g.,
+                wrong size, color, model)
+              </li>
+              <li>
+                The product does not match the description or images provided on
+                the website
+              </li>
+              <li>
+                The product arrived without essential parts or accessories that
+                were supposed to be included.
+              </li>
+              <li>
+                The product arrived without essential parts or accessories that
+                were supposed to be included.
+              </li>
+            </ul>
+          </div>
+        </h1>
+
+        <h1 className="max-w-[600px] text-base text-lightText mb-8 ml-10">
+          <span className="text-primeColor font-semibold text-lg ">
+            Non-Valid Reason to Return a Product
+          </span>
+          <br />
+          <br />
+          <div className="pl-6 mb-8">
+            <ul className="list-disc">
+              <li>
+                Simply deciding you no longer want the product without a valid
+                reason is often not a valid reason for a return.
+              </li>
+              <li>
+                Damaging or using the product in a manner not intended by the
+                manufacturer, leading to issues, is not valid for a return.
+              </li>
+              <li>
+                Normal wear and tear or deterioration from regular use is not a
+                valid reason for a return.
+              </li>
+              <li>
+                Returning a product because it does not perform as expected
+                due to incorrect or improper usage not covered by the return
+                policy
+              </li>
+            </ul>
+          </div>
         </h1>
 
         {/* Account Management */}
@@ -253,7 +328,10 @@ const Journal = () => {
         </h1>
 
         {/* Limitation of Liability */}
-        <span className="text-primeColor font-bold text-xl ml-6">
+        <span
+          className="text-primeColor font-bold text-xl ml-6"
+          id="limitation-of-liability"
+        >
           Limitation of Liability
         </span>
         <br />
